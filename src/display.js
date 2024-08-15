@@ -9,6 +9,12 @@ const images = {
 };
 const display = (() => {
   const output = document.querySelector('.output div');
+
+  function clearData() {
+    for (let i = output.childNodes.length; i > 0; i--) {
+      output.removeChild(output.lastChild)
+    }
+  }
   
   function pushData({
       resolvedAddress,
@@ -19,6 +25,7 @@ const display = (() => {
       humidity,
       feelslike,
     }, degree) {
+    clearData()
     const img = createIcon(icon);
     output.append(img);
 

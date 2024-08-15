@@ -64,14 +64,14 @@ html {
   text-align: center;
 }
 
-.input .wrapper {
+.input form {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 4px;
 }
 
-.input .wrapper .degree {
+.input form .degree {
   width: 100%;
   text-align: right;
 }

@@ -9,18 +9,20 @@
   <div class="input">
     <div>
       <div class="title">Weather App</div>
-      <div class="wrapper">
+      <form>
         <input type="text" name="location" id="location"
           value="Ho Chi Minh">
-        <button>OK</button>
+        <button type="button">OK</button>
         <div class="degree">
-          <input checked type="radio" name="degree" id="fahrenheit">
+          <input checked type="radio" name="degree" id="fahrenheit"
+            value="fahrenheit">
           <label for="fahrenheit">℉</label>
           
-          <input type="radio" name="degree" id="celsius">
+          <input type="radio" name="degree" id="celsius"
+            value="celcius">
           <label for="celsius">℃</label>
         </div>
-      </div>
+      </form>
     </div>
   </div>
   <div class="output">
