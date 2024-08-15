@@ -1,4 +1,6 @@
+import data from './data.json';
 async function getData(location) {
+  return data
   const validLocation = String(location).replaceAll(' ', '%20')
   const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${validLocation}?unitGroup=us&include=hours&key=MG2KFHHKSRDYZ8RNR894PSWE&contentType=json`;
 
