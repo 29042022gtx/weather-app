@@ -1,0 +1,126 @@
+:root {
+  --max: 900px;
+  --cloud: #eee;
+  --smoke: #ddd;
+  --bone: #ccc;
+  --gray: #aaa;
+  --dark: #444;
+  --blue: #1180ff;
+  --lightblue: #89c0ff;
+  --red: #ff3434;
+  --lightred: #ff6868;
+  --green: #00c220;
+  --priority1: #ff9c9c;
+  --priority2: #89c0ff;
+  --priority3: #85ef96;
+}
+
+* {
+  transition: all .4s;
+}
+
+svg {
+  /* width: 1em; */
+  height: 1em;
+  vertical-align: top;
+  pointer-events: none;
+}
+
+svg path {
+  fill: currentColor;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.input {
+
+}
+
+.input * {
+  font-size: 100%;
+}
+
+.input > div {
+  max-width: var(--max);
+  margin: auto;
+}
+
+.input .title {
+  margin: 24px 0;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.input .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.input .wrapper .degree {
+  width: 100%;
+  text-align: right;
+}
+
+.input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid var(--dark);
+  border-radius: 100em;
+}
+
+.input button {
+  padding: 8px 16px;
+  background-color: var(--cloud);
+  border: 1px solid var(--dark);
+  border-radius: 100em;
+}
+
+.input button:hover {
+  transition: all .1s;
+  background-color: var(--smoke);
+}
+
+.output {
+  margin: 24px 0;
+}
+
+.output > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: var(--max);
+  margin: auto;
+}
+
+.output img {
+  width: 25%;
+}
+
+.output .info {
+  height: fit-content;
+}
+
+.output .address {
+  line-height: 1.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.output .info * {
+  line-height: 1.5em;
+}
